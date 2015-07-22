@@ -1,0 +1,41 @@
+<div class="order-wrap">
+
+    <div class="block">
+        <h2>Управление столом: <strong><mark><%- title %></mark></strong></h2>
+    </div>
+
+    <div class="block">
+        <h5>Количество гостей</h5>
+        <div class="btn-group" data-toggle="buttons">
+
+            <% for (var i = 1; i <= count; i++) { %>
+                
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option<%- i %>" autocomplete="off"> <%- i %>
+                </label>
+
+            <% } %>
+
+        </div>        
+    </div>
+
+    <div class="block">
+        <h5>Официант</h5>
+        <div class="btn-group" data-toggle="buttons">
+
+            <% for (var i = 1; i <= count; i++) { %>
+                
+                <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option<%- i %>" autocomplete="off"> <%- i %>
+                </label>
+
+            <% } %>
+
+        </div>        
+    </div>
+
+    <div class="block">
+        <a href='#' class="btn btn-primary"></span>Открыть</a>   
+    </div>
+    
+</div>
